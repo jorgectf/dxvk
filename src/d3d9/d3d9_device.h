@@ -125,6 +125,7 @@ namespace dxvk {
     constexpr static VkDeviceSize StagingBufferSize = 4ull << 20;
 
     friend class D3D9SwapChainEx;
+    friend struct D3D9WindowContext;
     friend class D3D9ConstantBuffer;
     friend class D3D9UserDefinedAnnotation;
     friend D3D9VkInteropDevice;
