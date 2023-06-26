@@ -34,6 +34,11 @@ jobs:
       with:
         submodules: 'recursive'
 
+    - if: matrix.language == 'cpp'
+      name: Install dependencies
+      run: |
+        pip install meson
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
